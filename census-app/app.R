@@ -2,10 +2,10 @@ library(shiny)
 
 library(maps)
 library(mapproj)
-#source("census-app/helpers.R")
-source("helpers.R")
-#counties <- readRDS("census-app/data/counties.rds")
-counties <- readRDS("data/counties.rds")
+source("census-app/helpers.R")
+#source("helpers.R")
+counties <- readRDS("census-app/data/counties.rds")
+#counties <- readRDS("data/counties.rds")
 percent_map(counties$white, "darkgreen", "% White")
 
 # User interface ----
